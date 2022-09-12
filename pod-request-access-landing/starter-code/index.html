@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Pod Request Access Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="/">
+          <img src="./assets/desktop/logo.svg" alt="Pod - Home" />
+        </a>
+      </header>
+      <main>
+        <h1><span>Publish your podcasts</span> everywhere.</h1>
+        <p>
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <div class="podcasts">
+          <h2 class="sr-only">Podcasts we distribute to</h2>
+          <img src="./assets/desktop/spotify.svg" alt="Spotify" />
+          <img src="./assets/desktop/apple-podcast.svg" alt="Apple Podcast" />
+          <img
+            src="./assets/desktop/google-podcasts.svg"
+            alt="Google Podcasts"
+          />
+          <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts" />
+        </div>
+        <form action="#" id="form">
+          <input
+            type="email"
+            placeholder="Email address"
+            aria-label="email address"
+            aria-describedby="error success"
+            id="email"
+            name="email"
+            required
+          />
+          <button id="btn" type="submit">Request access</button>
+          <p id="error" aria-live="polite">Oops! Please check your email.</p>
+          <p id="success" aria-live="polite">
+            Success! Your request has been submitted.
+          </p>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

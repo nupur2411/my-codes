@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Karla";
+  src: url("font/Karla-Bold.woff2") format("woff2"),
+    url("font/Karla-Bold.woff") format("woff"),
+    url("font/Karla-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("font/Karla-Regular.woff2") format("woff2"),
+    url("font/Karla-Regular.woff") format("woff"),
+    url("font/Karla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+#space {
+  padding-top: 50px;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: #e5eff5;
+}
+#main {
+  margin: auto;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p {
+  line-height: 22px;
+}
+#section1 {
+  background-color: white;
+  padding: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #98a6bd;
+}
+#section1 h1 {
+  color: #2ab2af;
+}
+#section1 h3 {
+  color: #c0df34;
+}
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+#section2 {
+  width: 50%;
+  display: block;
+  float: left;
+  padding: 30px;
+  background-color: #2ab2af;
+  border-bottom-left-radius: 10px;
+  color: white;
+}
+strong {
+  font-size: 35px;
+  color: white;
+  padding-right: 10px;
+  line-height: 1em;
+}
+button {
+  background-color: #c0df34;
+  color: white;
+  padding: 10px;
+  width: 75%;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+#section2 p.one {
+  color: rgba(255, 255, 255, 0.5);
+}
+#section2 p.two {
+  color: rgba(255, 255, 255, 0.8);
+}
+#section3 {
+  width: 50%;
+  float: left;
+  display: block;
+  padding: 30px;
+  background-color: #47bdbb;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+#section3 p {
+  color: rgba(255, 255, 255, 0.5);
+}
+@media only screen and (max-width: 500px) {
+  #main {
+    width: 90%;
+  }
+  #section2 {
+    width: 100%;
+    float: none;
+    border-bottom-left-radius: 0px;
+  }
+  #section3 {
+    width: 100%;
+    float: none;
+    border-bottom-left-radius: 10px;
+  }
+  .flex {
+    display: inline;
+  }
+  button {
+    width: 100%;
+  }
+}
